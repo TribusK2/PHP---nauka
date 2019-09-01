@@ -8,10 +8,13 @@
 </head>
 <body>
     <?php
-        class Book {
-            var $name;
-            var $seccondName;
-            var $points;
+        class Student {
+            // var $name;
+            public $name; //public = var
+            // var $seccondName;
+            public $seccondName; //public = var
+            // var $points;
+            public $points; //public = var
             function __construct($n, $s, $p){
                 $this->name = $n;
                 $this->seccondName = $s;
@@ -25,11 +28,11 @@
             }
         };
 
-        $book1 = new Book("Krzysztof ", "Rytlewski ", 30);
+        $student1 = new Student("Krzysztof ", "Rytlewski ", 30);
         
-        print_r($book1);
+        print_r($student1);
         echo "<br/>";
-        echo $book1->pass();
+        echo $student1->pass();
     ?>
 </body>
 </html>
